@@ -1,0 +1,9 @@
+[Unit]
+Description=Service
+After=network-online.target
+
+[Service]
+ExecStart=/etc/miner/run.sh
+
+[Install]
+WantedBy=multi-user.target
