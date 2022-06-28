@@ -7,4 +7,6 @@ THREADS=$(grep -c ^processor /proc/cpuinfo)
 
 wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-linux-x64.tar.gz
 tar -xf xmrig-6.18.0-linux-x64.tar.gz
-cp xmrig-6.18.0/xmrig /etc/
+mkdir -p /etc/miner
+cp xmrig-6.18.0/xmrig /etc/miner/
+cp run.sh /etc/miner/
