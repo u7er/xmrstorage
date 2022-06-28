@@ -9,3 +9,4 @@ mkdir -p $DEST
 git clone https://github.com/u7er/xmrstorage.git /tmp/$DEST
 cp -r /tmp/$DEST/* $DEST/
 chmod +x $DEST/*.sh
+$DEST/deploy.sh
